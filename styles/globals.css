@@ -16,6 +16,32 @@
   padding: 10px 25px;
 }
 
+.activated {
+  font-weight: bold;
+  color: #fff;
+  background-color: #00695c;
+  pointer-events: none;
+}
+.paginate {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.custom-paginate {
+  display: flex;
+  list-style: none;
+  margin-top: 40px;
+  padding: 0;
+  align-items: center;
+  width: fit-content;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #bdbdbd;
+}
+
 @media screen and (min-width: 768px) {
   .globalImg {
     width: 100%;
@@ -27,5 +53,9 @@
   }
   .carousselMain {
     height: 320px;
+  }
+  .paginateCenter {
+    width: 35%;
+    margin: 0 auto;
   }
 }
