@@ -13,6 +13,7 @@ import {
   MDBDropdownItem,
   MDBIcon,
 } from "mdbreact";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -26,6 +27,11 @@ const Header = () => {
               Home
             </div>
           </MDBNavItem>
+          <Link href="/properties" passHref>
+            <MDBNavItem>
+              <div className="nav-link">Available properties</div>
+            </MDBNavItem>
+          </Link>
         </MDBNavbarNav>
       </MDBCollapse>
     </MDBNavbar>
