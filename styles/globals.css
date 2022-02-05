@@ -12,4 +12,11 @@
     width: 100%;
     height: 250;
   }
+
+  .carousselImg {
+    transform: translate(0%, -30%);
+  }
+  .carousselMain {
+    height: 320px;
+  }
 }

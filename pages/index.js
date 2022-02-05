@@ -2,6 +2,7 @@ import { MDBContainer } from "mdbreact";
 import Head from "next/head";
 import Image from "next/image";
 import api from "../auth/axios";
+import Caroussel from "../components/caroussel";
 import Layout from "../components/layout";
 import PropertiesVip from "../components/propertiesVip";
 import styles from "../styles/Home.module.css";
@@ -10,6 +11,7 @@ export default function Home({ propertiesVip }) {
   return (
     <Layout>
       <MDBContainer>
+        <Caroussel />
         <PropertiesVip properties={propertiesVip} />
       </MDBContainer>
     </Layout>
