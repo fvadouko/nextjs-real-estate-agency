@@ -7,6 +7,15 @@
   color: #00695c;
 }
 
+.globalButton {
+  border-radius: 20px;
+  color: #fff;
+  background-color: #00695c;
+  border: none;
+  font-size: 13px;
+  padding: 10px 25px;
+}
+
 @media screen and (min-width: 768px) {
   .globalImg {
     width: 100%;
