@@ -10,6 +10,7 @@ import {
   MDBBtn,
 } from "mdbreact";
 import { priceFormatted } from "../helpers/helpers";
+import Link from "next/link";
 
 const ListProperties = ({ properties }) => {
   return (
@@ -62,9 +63,15 @@ const ListProperties = ({ properties }) => {
                     <MDBIcon icon="city" className="mr-1" />
                     {property.city}
                   </p>
-                  <MDBBtn color="primary" size="md">
-                    Read More
-                  </MDBBtn>
+                  <Link
+                    href="/property/[property]"
+                    as={`/property/${property.slug}`}
+                    passHref
+                  >
+                    <MDBBtn color="primary" size="md">
+                      Read More
+                    </MDBBtn>
+                  </Link>
                 </MDBCol>
               </MDBRow>
               <hr className="my-5" />
