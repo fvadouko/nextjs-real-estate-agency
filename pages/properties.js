@@ -7,7 +7,11 @@ import { useRouter } from "next/router";
 import ReactPaginate from "react-paginate";
 import SearchFilter from "../components/searchFilter";
 
-export default function Properties({ properties, currentPage, totalPages }) {
+export default function PropertiesPage({
+  properties,
+  currentPage,
+  totalPages,
+}) {
   const router = useRouter();
   const paginateHandler = (page) => {
     const currentPath = router.pathname;

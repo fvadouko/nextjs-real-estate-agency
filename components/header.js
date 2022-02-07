@@ -33,6 +33,16 @@ const Header = () => {
             </MDBNavItem>
           </Link>
         </MDBNavbarNav>
+        <MDBNavbarNav right>
+          <MDBNavItem>
+            <Link href="/contact">
+              <a className="nav-link">
+                <MDBIcon icon="address-book" className="mr-1" />
+                Contact
+              </a>
+            </Link>
+          </MDBNavItem>
+        </MDBNavbarNav>
       </MDBCollapse>
     </MDBNavbar>
   );
