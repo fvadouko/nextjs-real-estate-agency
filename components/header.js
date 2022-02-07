@@ -44,7 +44,15 @@ const Header = () => {
               <div className="nav-link">Available properties</div>
             </MDBNavItem>
           </Link>
+          {isAuthenticated && user.role === "admin" && (
+            <MDBNavItem>
+              <Link href="/admin">
+                <a className="nav-link">Dashboard</a>
+              </Link>
+            </MDBNavItem>
+          )}
         </MDBNavbarNav>
+
         <MDBNavbarNav right>
           <MDBNavItem active={router.pathname === "/contact"}>
             <Link href="/contact">
