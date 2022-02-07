@@ -5,6 +5,7 @@ import Layout from "../components/layout";
 import ListProperties from "../components/listProperties";
 import { useRouter } from "next/router";
 import ReactPaginate from "react-paginate";
+import SearchFilter from "../components/searchFilter";
 
 export default function Properties({ properties, currentPage, totalPages }) {
   const router = useRouter();
@@ -22,6 +23,7 @@ export default function Properties({ properties, currentPage, totalPages }) {
   return (
     <Layout>
       <MDBContainer>
+        <SearchFilter />
         <ListProperties properties={properties} />
       </MDBContainer>
       <div className="paginateCenter">
