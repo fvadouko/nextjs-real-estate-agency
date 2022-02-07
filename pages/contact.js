@@ -31,7 +31,7 @@ const ContactPage = () => {
                     </h3>
                   </div>
                   <p className="dark-grey-text">
-                    We'll write rarely, but only the best content.
+                    We will write rarely, but only the best content.
                   </p>
                   <div className="md-form">
                     <MDBInput
